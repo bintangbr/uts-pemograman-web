@@ -131,4 +131,4 @@ http://localhost:8080
 
 ## 📄 Lisensi
 
-MIT License © 2025 by [Nama Anda]
+MIT License © 2025 by bntng
