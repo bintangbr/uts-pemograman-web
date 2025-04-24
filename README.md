@@ -1,7 +1,7 @@
 
-# 🛍️ Aplikasi CRUD Go + Bootstrap (Produk & Kategori)
+# 🛍️ Aplikasi CRUD Go + Bootstrap (Produk & Kategori) (UTS Pemograman Web)
 
-Aplikasi web CRUD sederhana menggunakan **Golang (net/http)** untuk backend dan **Bootstrap 5 + HTML + JavaScript** untuk frontend. Aplikasi ini memungkinkan manajemen **produk** dan **kategori** yang saling berelasi.
+Aplikasi web CRUD Toko sederhana menggunakan **Golang (net/http)** untuk backend dan **Bootstrap 5 + HTML + JavaScript** untuk frontend. Aplikasi ini memungkinkan manajemen **produk** dan **kategori** yang saling berelasi.
 
 ---
 
@@ -31,10 +31,7 @@ crud-app/
 │   ├── kategori_handler.go
 │   └── produk_handler.go
 ├── public/
-│   └── index.html
-└── static/
-    ├── css/
-    └── js/
+    └── index.html
 ```
 
 ---
@@ -44,21 +41,21 @@ crud-app/
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/username/crud-app.git
-cd crud-app
+git clone https://github.com/bintangbr/uts-pemograman-web.git
+cd uts-pemograman-web
 ```
 
 ### 2. Inisialisasi Go module
 
 ```bash
-go mod init crud-app
+go mod init uts-pemograman-web
 go get github.com/go-sql-driver/mysql
 ```
 
 ### 3. Buat database dan tabel
 
 ```sql
-CREATE DATABASE crud_app;
+CREATE DATABASE uts-pemograman-web;
 
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -79,10 +76,10 @@ CREATE TABLE products (
 Edit file `database/db.go`:
 
 ```go
-dsn := "username:password@tcp(127.0.0.1:3306)/crud_app"
+dsn := "root@tcp(127.0.0.1:3306)/uts-pemograman-web" (usyng passwd no)
 ```
 
-Ganti `username` dan `password` sesuai pengaturan MySQL kamu.
+Ganti `username` dan `password` sesuai pengaturan MySQL.
 
 ### 5. Jalankan aplikasi
 
